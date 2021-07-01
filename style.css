@@ -1,0 +1,134 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html{
+    min-height: 100vh;
+}
+#game{
+    margin: auto;
+    width: 600px;
+    height: 250px;
+    border-bottom: 1px solid #000;
+}
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(img/—Pngtree—dinosaur.png);
+    background-size: 50px 70px;
+    position: relative;
+    top: 200px;
+}
+#cactus{
+    width: 20px;
+    height: 50px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 50px;
+    position: relative;
+    left: 580px;
+    top: 150px;
+    animation: run 1s infinite linear;
+}
+
+@keyframes run{
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.jump{
+    animation: jump 0.4s linear
+}
+@keyframes jump{
+    0%{
+        top: 200px;
+    }
+    50%{
+        top: 100px;
+    }
+    100%{
+        top: 200px;
+    }
+}
+
+.record{
+    width: 100%;
+    text-align: center;
+    font-size: large;
+}
