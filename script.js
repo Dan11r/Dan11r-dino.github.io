@@ -14,6 +14,10 @@ document.addEventListener('keydown' ,()=>{
     jump()
     point.innerHTML = ++initvaleu
 })
+document.addEventListener('click' ,()=>{
+    jump()
+    point.innerHTML = ++initvaleu
+})
 
 let alive = setInterval(() => {
     let dinoPos = parseInt(window.getComputedStyle(dino).getPropertyValue('top'))
