@@ -27,4 +27,4 @@ alert('game over')
 initvaleu = 0
 location.reload()
     }
-}, 10);
+}, 1);
