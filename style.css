@@ -104,7 +104,7 @@ html{
   
 }
 .run{
-   animation: run 1s infinite linear;
+   animation: run 0.9s infinite linear;
 }
 
 @keyframes run{
