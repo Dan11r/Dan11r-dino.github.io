@@ -101,7 +101,7 @@ html{
     position: relative;
     left: 580px;
     top: 150px;
-    animation: run 1.5s infinite linear;
+    animation: run 5s infinite linear;
 }
 
 @keyframes run{
