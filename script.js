@@ -24,6 +24,7 @@ let alive = setInterval(() => {
     let cactusPos = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'))
     if( dinoPos > 150 && cactusPos < 30){
 alert('game over')
+ cactus.classList.remove('run')
 initvaleu = 0
 location.reload()
     }
