@@ -25,5 +25,6 @@ let alive = setInterval(() => {
     if( dinoPos > 150 && cactusPos < 30){
 alert('game over')
 initvaleu = 0
+location.reload()
     }
 }, 10);
